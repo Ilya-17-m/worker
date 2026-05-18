@@ -2,7 +2,7 @@
 
 function lightHeaderStyle() {
 
-  const whiteText = document.querySelectorAll('#my-text');
+  const whiteText = document.querySelectorAll('#myText');
   const header = document.querySelector('header');
 
   whiteText.forEach(element => {
@@ -98,7 +98,7 @@ function lightModalStyle() {
     modalContent.style.backgroundColor = 'white';
     telNumber.className = 'user-tel modal-text-light';
     topic.className = 'user-tel modal-text-light';
-    
+
     modalText.forEach(element => {
         element.className = 'name-value modal-text-light';
     });

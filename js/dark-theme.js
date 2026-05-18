@@ -1,7 +1,7 @@
 
 
 function darkHeaderStyle() {
-  const whiteText = document.querySelectorAll('#my-text');
+  const whiteText = document.querySelectorAll('#myText');
   const header = document.querySelector('header');
 
   whiteText.forEach(element => {
@@ -102,7 +102,7 @@ function darkModalStyle() {
     lastName.className = 'name-style input-style-dark';
     phone.className = 'name-style input-style-dark';
     message.className = 'name-style input-style-dark';
-    
+
     modalText.forEach(element => {
         element.className = 'name-value modal-text-dark';
     });
