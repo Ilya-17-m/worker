@@ -1,0 +1,91 @@
+
+.header-light {
+    background: #e8e6e6;
+}
+
+.black-text {
+    color: black;
+}
+
+/* ================
+    FIRST SECTION
+=================== */
+
+.first-sec-light {
+    background: #FEFEFE;
+}
+
+.my-console-light {
+    background: #F9FBFA;
+}
+
+.console-light {
+    background: #e8e6e6;
+}
+
+/* =================
+    SECOND SECTION
+==================== */
+
+.second-sec-light {
+    background: #FDFDFD;
+}
+
+.me-info-light {
+    background: #e8e6e6;
+    border: solid black 2px;
+}
+
+.employment-light {
+    background: #e8e6e6;
+    border: solid black 2px;
+}
+
+/* ==============
+    THIRD SECTION
+================= */
+
+.skills-section-light {
+    background: #FEFEFE;
+}
+
+.swiper-text-light {
+    color: black;
+}
+
+/* ==============
+    FOURTH SECTION
+================= */
+
+.projects-section-light {
+    background: #FEFEFE;
+}
+
+.project-light {
+    background: #e8e6e6;
+    border: solid black 2px;
+}
+
+/* ==============
+    FIFTH SECTION
+================= */
+
+.fifth-section-light {
+    background: #FEFEFE;
+}
+
+/* ==============
+    FOOTER
+================= */
+
+.footer-light {
+    background: #cdcccc;
+}
+
+/* ==============
+    MODAL LIGHT
+================= */
+
+.modal-text-light {
+    color: black;
+}

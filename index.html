@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark.css">
+    <link rel="stylesheet" href="css/light.css">
+    <title>Ilya Melnichuk</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Подключение fontawesome -->
+    
+    <!-- Library connection Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Library connection JustValidate -->
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+          
+</head>
+<body>
+
+    <header class="head-information">
+        
+        <div class="company-name">
+            <p>
+                <span id="my-text">{ Backend.</span>
+                <span class="blue-text">Developer</span>
+                <span id="my-text">}</span>
+            </p>
+        </div>
+
+        <div class="services-link">
+
+            <div class="media">
+                <p>
+                    <a id="my-text" href="#aboutme">Worker</a>
+                </p>
+            </div>
+
+            <div class="media">
+                <p>
+                    <a id="my-text" href="#skills">Skills</a>
+                </p>
+            </div>
+
+            <div class="media">
+                <p>
+                    <a id="my-text" href="#projects">Projects</a>
+                </p>
+            </div>
+
+            <div class="media">
+                <p>
+                    <a id="my-text" href="#contacts">Contacts</a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="media-link">
+
+            <div class="media">
+                <a href="https://www.linkedin.com/in/ilya-melnichuk-799324404?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
+                    <h3 id="my-text">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </h3>
+                </a>
+            </div>
+
+            <div class="media">
+                <a href="https://t.me/just_ilya04">
+                    <h3 id="my-text">
+                        <i class="fa-brands fa-telegram"></i>
+                    </h3>
+                </a>
+            </div>
+
+            <div class="media">
+                <a href="https://github.com/Ilya-17-m">
+                    <h3 id="my-text">
+                        <i class="fa-brands fa-github"></i>
+                    </h3>
+                </a>
+            </div>
+
+            <div class="media">
+                
+                <button class="button-theme" id="button-theme">
+                    <i class="fa-solid fa-moon seluette" id="theme-seluette"></i>
+                </button>
+                
+            </div>
+
+        </div>
+
+    </header>
+
+    <section id="first-section" class="greeting">
+        <div class="developer">
+            <div>
+
+                <div>
+                    <p id="my-text">Backend Developer</p>
+                </div>
+
+            </div>
+
+            <div class="me">
+
+                <h1>
+                    <span id="my-text">Hello, I`am</span>
+                    <span class="green-text">Melnichuk Ilya<br></span>
+                    <span id="my-text">Backend</span>
+                    <span class="green-text">Developer</span>
+                </h1>
+
+            </div>
+
+            <div>
+
+                <p id="my-text">
+                    I create reliable, secure backend services and API`s in Python.
+                </p>
+
+            </div>
+
+            <div class="my-stack">
+
+                <div class="sciense">
+                    <p id="my-text">
+                        <i class="fa-solid fa-circle green-text" style="transform: scale(0.6);"></i>
+                        Python
+                    </p>
+                </div>
+                <div class="sciense white-text">
+                    <p id="my-text">
+                        <i class="fa-solid fa-circle blue-text" style="transform: scale(0.6);"></i>
+                        Django
+                    </p>
+                </div>
+                <div class="sciense white-text">
+                    <p id="my-text">
+                        <i class="fa-solid fa-circle green-text" style="transform: scale(0.6);"></i>
+                        DRF
+                    </p>
+                </div>
+                <div class="sciense white-text">
+                    <p id="my-text">
+                        <i class="fa-solid fa-circle blue-text" style="transform: scale(0.6);"></i>
+                        FastAPI
+                    </p>
+                </div>
+                <div class="sciense white-text">
+                    <p id="my-text">
+                        <i class="fa-solid fa-circle green-text" style="transform: scale(0.6);"></i>
+                        Flask
+                    </p>
+                </div> 
+
+            </div>
+
+            <div id="my-text">
+
+                <a class="watch-project-link" href="https://github.com/Ilya-17-m">
+                    <button class="project-btn btn">
+                        <i class="fa-solid fa-gauge-simple-high"></i>
+                        Watch my project
+                    </button>
+                </a>
+            
+                 
+                <button class="call-button btn" id="openModal">
+                    <i class="fa-solid fa-phone-volume green-text"></i>
+                    Contact with me
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="my-console" id="console">
+
+            <div class="mac-style">
+                <i class="fa-solid fa-circle" style="color: #F24527;"></i>
+                <i class="fa-solid fa-circle" style="color: #F6CC3C;"></i>
+                <i class="fa-solid fa-circle" style="color: #2AC347;"></i>
+            </div>
+
+            <div class="console">
+
+                <p class="console-text"  id="my-console-text">
+
+                    <br><span class="green-text">$ whoami<br><br></span>
+
+                    <span>Backend Developer<br><br></span>
+
+                    <span class="green-text">$ cat skills.txt<br><br></span>
+
+                    <span> > Python<br></span>
+
+                    <span> > Django<br></span>
+
+                    <span> > Django Rest Framework<br></span>
+
+                    <span> > FastAPI<br></span>
+
+                    <span> > Flask<br></span>
+
+                    <span> > PostgreSQL<br></span>
+
+                    <span> > Docker<br><br></span>
+
+                    <span class="green-text">
+                        Building cool things...
+                        <i class="fa-solid fa-rocket"></i><br>
+                    </span>
+
+                    <span class="blinking">|</span><br>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="worker-information" id="second-section">
+
+        <div  class="about-me skills-block">
+            <h2 id="my-text">
+                <i class="fa-regular fa-user green-text">&emsp;</i>
+                About me
+            </h2>
+            <p style="color: #9FA6B0;">
+                I`am a backend-developer. I work with database design and integration,
+                 create REST API.<br> I love clean code, automation and solving
+                 complex problems.
+            </p>
+            
+        </div>
+
+        <div class="worker">
+
+            <div class="work-i">
+
+                <div class="worker-c" id="myInfo">
+                    <h2>
+                        <i class="fa-solid fa-calendar-days green-text">&emsp;</i>
+                    </h2>
+                    <p id="my-text">
+                        <span class="gray-text">Age<br></span>
+                        <span>18</span>
+                    </p>
+                </div>
+
+                <div class="worker-c" id="myInfo">
+                    <h2>
+                        <i class="fa-solid fa-location-dot green-text">&emsp;</i>
+                    </h2>
+                    <p id="my-text">
+                        <span class="gray-text">City<br></span>
+                        <span>Almaty, Kazakhstan</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="active-work" id="employment">
+                <h2>
+                    <i class="fa-solid fa-code green-text">&emsp;</i>
+                </h2>
+                <p id="my-text">
+                    <span class="gray-text">
+                        Employment<br>
+                    </span>
+                    <span>Open to suggestions</span>
+                </p>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <section class="skills-section" id="skills">
+
+        <div class="skills-block">
+            <h2 id="my-text">
+                <i class="fa-solid fa-code green-text">&emsp;</i>
+                Skills
+            </h1>
+        </div>
+
+        <div class="just-block"></div>
+
+        <div class="swiper">
+            
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+                    Python
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg">
+                    Django
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" 
+                    style="filter: brightness(0) invert(1);"/>
+                    Flask
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg">
+                    FastAPI
+                </div>
+                <div class="swiper-slidet" id="swiper-text">
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">
+                    PostgreSQL
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
+                    Docker
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+                    Git
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                    HTML
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+                    CSS
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+                    JavaScript
+                </div>
+                <div class="swiper-slidet" id="swiper-text">
+                    <img class="pic" src="https://cdn.simpleicons.org/sqlalchemy"/>
+                    SQLAlchemy
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.simpleicons.org/grafana"/>
+                    Grafana
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.simpleicons.org/prometheus"/>
+                    Prometheus
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.simpleicons.org/nginx"/>
+                    Nginx
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"/>
+                    Redis
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"/>
+                    Linux
+                </div>
+                <div class="swiper-slide" id="swiper-text">
+                    <img class="pic" src="https://cdn.simpleicons.org/celery"/>
+                    Celery
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="just-block"></div>
+        
+    </section>
+
+    <section class="worker-projects" id="worker-projects">
+        
+        <div class="skills-block">
+            <h2 id="my-text">
+                <i class="fa-solid fa-folder-open green-text">&emsp;</i>
+                Projects
+            </h2>
+        </div>
+
+        
+        <div class="my-projects">
+
+            <div class="project" id="sciense-block">
+
+                <div>
+                    <p class="project-title" id="project-title">
+                        Megano shop
+                    </p>
+                </div>
+
+                <div>
+                    <p class="gray-text project-description">
+                        REST API for an online store. Product catalog, cart, orders,
+                        profile, registraton, authentication and authorization.
+                    </p>
+                </div>
+
+                <div  class="project-technologes">
+
+                    <div class="sciense" id="sciense">
+                        <p style="transform: scale(0.8);">
+                            DRF
+                        </p>
+                    </div>
+
+                    <div class="sciense" id="sciense">
+                        <p style="transform: scale(0.8);">
+                            PostgreSQL
+                        </p>
+                    </div>
+
+                    <div class="sciense"id="sciense">
+                        <p style="transform: scale(0.8);">
+                            Docker
+                        </p>
+                    </div>
+
+                    <div class="sciense" id="sciense">
+                        <p style="transform: scale(0.8);">
+                            Grafana
+                        </p>
+                    </div>
+
+                </div>
+
+                <div>
+                    <p>
+                        <span>
+                            <a class="project-link" href="https://github.com/Ilya-17-m/megano_shop">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub | To cross
+                                <i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.8);"></i>
+                            </a>
+                        </span>
+                    </p>
+                </div>
+                
+            </div>
+
+            <div class="project" id="sciense-block">
+
+                <div>
+                    <p class="project-title" id="project-title">
+                        Clone Twitter
+                    </p>
+                </div>
+
+                <div>
+                    <p class="gray-text project-description">
+                        API for Twitter clone. Support for work with
+                        posts, subscriptions and account.
+                    </p>
+                </div>
+
+                <div class="project-technologes">
+
+                    <div class="sciense"id="sciense">
+                        <p style="transform: scale(0.8);">
+                            FastAPI
+                        </p>
+                    </div>
+
+                    <div class="sciense"id="sciense">
+                        <p style="transform: scale(0.8);">
+                            PostgreSQL
+                        </p>
+                    </div>
+
+                    <div class="sciense"id="sciense">
+                        <p style="transform: scale(0.8);">
+                            SQLAlchemy
+                        </p>
+                    </div>
+
+                    <div class="sciense"id="sciense">
+                        <p style="transform: scale(0.8);">
+                            Nginx
+                        </p>
+                    </div>
+
+                </div>
+
+                <div>
+                    <p>
+                        <span>
+                            <a class="project-link" href="https://github.com/Ilya-17-m/clone_twitter">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub | To cross
+                                <i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.8);"></i>
+                            </a>
+                        </span>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="project" id="sciense-block">
+
+                <div>
+                    <p class="project-title" id="project-title">
+                        Tracking habits
+                    </p>
+                </div>
+
+                <div>
+                    <p class="gray-text project-description" >
+                        API for the habit tracking project. It has registration,
+                         functionality for interaction with the habit and a queue
+                         of tasks to remind you of the habit.
+                    </p>
+                </div>
+
+                <div class="project-technologes">
+
+                    <div class="sciense"id="sciense">
+                        <p style="transform: scale(0.8);">
+                            TeleBot
+                        </p>
+                    </div>
+
+                    <div class="sciense"id="sciense">
+                        <p style="transform: scale(0.8);">
+                            FastAPI
+                        </p>
+                    </div>
+
+                    <div class="sciense"id="sciense">
+                        <p style="transform: scale(0.8);">
+                            SQLAlchemy
+                        </p>
+                    </div>
+
+                    <div class="sciense"id="sciense">
+                        <p style="transform: scale(0.8);">
+                            PostgreSQL
+                        </p>
+                    </div>
+
+                </div>
+
+                <div>
+                    <p>
+                        <span>
+                            <a class="project-link" href="https://github.com/Ilya-17-m/Tracking_habits">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub | To cross
+                                <i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.8);"></i>
+                            </a>
+                        </span>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="gray-text" style="margin: 0 3%;">
+            The rest of the projects can be found on GitHub.
+        </div>
+
+    </section>
+
+    <section id="contacts">
+
+        <div class="education">
+            
+            <div id="my-text">
+                <h3>
+                    <i class="fa-solid fa-graduation-cap green-text">&nbsp;</i>
+                    Education
+                </h3>
+                <p class="contacts">
+                    <span>
+                        <i class="fa-solid fa-signal">&nbsp;</i>
+                        Degree education:<br>
+                    </span>
+                    <span class="blue-text">
+                        <br>Higher education.<br>
+                    </span>
+                </p>
+                <p class="contacts">
+                    <span>
+                        <br><i class="fa-brands fa-leanpub">&nbsp;</i>
+                        Faculty:<br>
+                    </span>
+                    <span class="blue-text">
+                        <br>Applied informatics.<br>
+                    </span>
+                </p>
+                <p class="contacts">
+                    <span>
+                        <br><i class="fa-solid fa-laptop-code">&nbsp;</i>
+                        Speciality:<br>
+                    </span>
+                    <span class="blue-text">
+                        <br>Applied informatics in economics.
+                    </span>
+                </p>
+
+            </div>
+
+            <div id="my-text">
+                <h3>
+                    <i class="fa-solid fa-address-card green-text">&nbsp;</i>
+                    Contacts
+                </h3>
+
+                <p class="contacts">
+                    <span>
+                        <i class="fa-solid fa-envelope">&nbsp;</i>
+                        Email<br>
+                        <span class="blue-text"><br>ilya.melnichuk.2007@mail.ru<br></span>
+                    </span>
+
+                    <span>
+                        <br><i class="fa-brands fa-telegram">&nbsp;</i>
+                        Telegram<br>
+                        <br><a class="contact-link blue-text" href="https://t.me/just_ilya04">
+                            @just_ilya04
+                            <i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.7);"></i>
+                        </a><br>
+                    </span>
+
+                    <span>
+                        <br><i class="fa-brands fa-github">&nbsp;</i>
+                        GitHub<br>
+                        <br><a class="contact-link blue-text" href="https://github.com/Ilya-17-m">
+                            github.com/ilya-17-m
+                            <i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.7);"></i>
+                        </a><br>
+                    </span>
+
+                    <span>
+                        <br><i class="fa-brands fa-linkedin">&nbsp;</i>
+                        LinkedIn<br>
+                        <br>
+                        <a class="contact-link blue-text" href="https://www.linkedin.com/in/ilya-melnichuk-799324404?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
+                            linkedin.com/ilya
+                            <i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.7);"></i>
+                        </a>
+                    </span>
+                </p>
+            </div>
+
+            <div id="program-style-img">
+                
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <p class="gray-text">
+            <i class="fa-solid fa-circle box" style="transform: scale(0.4);"></i>
+            2026 Ilya Melnichuk | Backend Developer
+        </p>
+    </footer>
+
+
+    <div class="modal" id="modal">
+        <div class="modal-content" id="modal-content">
+            <h2 style="color: #4FE38B;">Contact with me</h2>
+
+            <form id="contact-form">
+                <div class="name">
+                    <div id="modal-text">
+                        <p class="name-value">First name</p>
+                        <input id="firstName" class="name-style" type="text" placeholder="Ivan">
+                    </div>
+
+                    <div id="modal-text">
+                        <p class="name-value">Last name</p>
+                        <input id="lastName" class="name-style" type="text" placeholder="Ivanov">
+                    </div>
+                </div>
+
+                <div class="user-tel" id="tel-number">
+                    <p class="tel-value">Telephone number</p>
+                    <input id="phone" class="name-style" type="tel" placeholder="+7-7(XX)-(XXX)-(XX)-(XX)">
+                </div>
+
+                <div class="user-tel" id="topic">
+                    <p class="topic-value">Topic</p>
+                    <textarea id="message" class="name-style bigTextArea" 
+                    placeholder="Job offer or project question" style="max-height: 40px;"></textarea>
+                </div>
+
+                <div class="modalButtons">
+                    <button type="button" id="closeModal" class="modal-btn" style="height: 30px;">
+                        Close
+                    </button>
+
+                    <button type="submit" id="pushModal" class="modal-btn" style="background-color: #4FE38B; height: 30px;">
+                        Push
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script type="module" src="js/index.js"></script>
+
+</body>
+</html>

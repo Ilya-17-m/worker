@@ -1,0 +1,97 @@
+.header-dark {
+    background: #040B15;
+}
+
+
+.white-text {
+    color: white;
+}
+
+/* ==============
+    FIRST SECTION
+================= */
+
+.first-sec-dark {
+    background: #070E18;
+}
+
+.my-console-dark {
+    background: #111723;
+}
+
+.console-dark {
+    background: #050C16;
+}
+
+/* ==============
+    SECOND SECTION
+================= */
+
+.second-sec-dark {
+    background: #070D19;
+}
+
+.me-info-dark {
+    background: #0C131D;
+    border: solid black 2px;
+}
+
+.employment-dark {
+    background: #0C131D;
+    border: solid black 2px;
+}
+
+/* ==============
+    THIRD SECTION
+================= */
+
+.skills-section-dark {
+    background: #070D19;
+}
+
+.swiper-text-dark {
+    color: white;
+}
+
+/* ==============
+    FOURTH SECTION
+================= */
+
+.projects-section-dark {
+    background: #060D17;
+}
+
+.project-dark {
+    background: #0C131D;
+    border: solid black 2px;
+}
+
+/* ==============
+    FIFTH SECTION
+================= */
+
+
+.fifth-section-dark {
+    background: #060D17;
+}
+
+/* ==============
+    FOOTER
+================= */
+
+.footer-dark {
+    background: #080E1A;
+}
+
+/* ==============
+    MODAL DARK
+================= */
+
+.modal-text-dark {
+    color: white;
+}
+
+.input-style-dark {
+    background: #292F3D;
+    height: 30px;
+}
