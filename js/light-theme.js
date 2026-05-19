@@ -90,15 +90,26 @@ function lightFooterStyle() {
 
 
 function lightModalStyle() {
+
     const modalContent = document.querySelector('#modal-content');
     const modalText = document.querySelectorAll('#modal-text');
     const telNumber = document.querySelector('#tel-number');
     const topic = document.querySelector('#topic');
 
-    modalContent.style.backgroundColor = 'white';
+    const firstName = document.querySelector('#firstName');
+    const lastName = document.querySelector('#lastName');
+    const phone = document.querySelector('#phone');
+    const message = document.querySelector('#message');
+
+    modalContent.style.backgroundColor = '#ffffff';
     telNumber.className = 'user-tel modal-text-light';
     topic.className = 'user-tel modal-text-light';
-
+    
+    firstName.className = 'name-style input-style-light';
+    lastName.className = 'name-style input-style-light';
+    phone.className = 'name-style input-style-light';
+    message.className = 'name-style input-style-light';
+    
     modalText.forEach(element => {
         element.className = 'name-value modal-text-light';
     });

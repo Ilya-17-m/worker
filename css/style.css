@@ -56,6 +56,7 @@ body {
   margin: 2%;
 }
 
+
 /* media links */
 
 .media {
@@ -74,13 +75,26 @@ body {
   text-decoration: underline;
 }
 
+/* Choice language */
+
+.choices {
+  width: 55px;
+  height: 35px;
+  font-size: 8px;
+  position: relative;
+}
+
+
+
 /* =======================
    BUTTONS
 ======================= */
 
 .theme-button {
   border-radius: 10px;
-  border: 2px solid black;
+  border: 2px solid white;
+  background-color: #040B15;
+  color: white;
   height: 45px;
   width: 45px;
   cursor: pointer;
@@ -384,6 +398,7 @@ footer {
   border-radius: 10px;
   text-align: center;
   border: solid rgba(0, 255, 170, 0.3) 2px;
+  background-color: #090F1B;
 
   box-shadow: 
   0 0 10px rgba(0, 255, 170, 0.4),

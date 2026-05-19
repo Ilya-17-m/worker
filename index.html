@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="css/light.css">
     <title>Ilya Melnichuk</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Подключение fontawesome -->
+    <!-- Connect fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Library connect Choices.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@11.1.0/public/assets/styles/choices.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@11.1.0/public/assets/scripts/choices.min.js"></script>
 
     <!-- Library connection Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
@@ -17,17 +22,17 @@
 
     <!-- Library connection JustValidate -->
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-
+          
 </head>
 <body>
 
-    <header class="head-information">
-
+    <header class="head-information header-dark">
+        
         <div class="company-name">
             <p>
-                <span id="myText">{ Backend.</span>
+                <span class="white-text" id="myText">{ Backend.</span>
                 <span class="blue-text">Developer</span>
-                <span id="myText">}</span>
+                <span class="white-text" id="myText">}</span>
             </p>
         </div>
 
@@ -35,25 +40,25 @@
 
             <div class="media">
                 <p>
-                    <a id="myText" href="#aboutme">Worker</a>
+                    <a class="white-text" id="myText" href="#aboutme">Worker</a>
                 </p>
             </div>
 
             <div class="media">
                 <p>
-                    <a id="myText" href="#skills">Skills</a>
+                    <a class="white-text" id="myText" href="#skills">Skills</a>
                 </p>
             </div>
 
             <div class="media">
                 <p>
-                    <a id="myText" href="#projects">Projects</a>
+                    <a class="white-text" id="myText" href="#projects">Projects</a>
                 </p>
             </div>
 
             <div class="media">
                 <p>
-                    <a id="myText" href="#contacts">Contacts</a>
+                    <a class="white-text" id="myText" href="#contacts">Contacts</a>
                 </p>
             </div>
 
@@ -63,7 +68,7 @@
 
             <div class="media">
                 <a href="https://www.linkedin.com/in/ilya-melnichuk-799324404?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
-                    <h3 id="myText">
+                    <h3 class="white-text" id="myText">
                         <i class="fa-brands fa-linkedin"></i>
                     </h3>
                 </a>
@@ -71,7 +76,7 @@
 
             <div class="media">
                 <a href="https://t.me/just_ilya04">
-                    <h3 id="myText">
+                    <h3 class="white-text" id="myText">
                         <i class="fa-brands fa-telegram"></i>
                     </h3>
                 </a>
@@ -79,30 +84,40 @@
 
             <div class="media">
                 <a href="https://github.com/Ilya-17-m">
-                    <h3 id="myText">
+                    <h3 class="white-text" id="myText">
                         <i class="fa-brands fa-github"></i>
                     </h3>
                 </a>
             </div>
 
+            <div class="media" style="transform: scale(0.6);">
+                
+                <select class="choice-languages" id="language">
+                    <option value="EN">EN</option>
+                    <option value="RU">RU</option>
+                    <option value="KZ">KZ</option>
+                </select>
+                
+            </div>
+
             <div class="media">
-
-                <button class="button-theme" id="button-theme">
-                    <i class="fa-solid fa-moon seluette" id="theme-seluette"></i>
+                
+                <button class="theme-button" id="button-theme">
+                    <i class="fa-regular fa-moon" id="theme-seluette"></i>
                 </button>
-
+                
             </div>
 
         </div>
 
     </header>
 
-    <section id="first-section" class="greeting">
+    <section id="first-section" class="greeting first-sec-dark">
         <div class="developer">
             <div>
 
                 <div>
-                    <p id="myText">Backend Developer</p>
+                    <p class="white-text" id="myText">Backend Developer</p>
                 </div>
 
             </div>
@@ -110,9 +125,9 @@
             <div class="me">
 
                 <h1>
-                    <span id="myText">Hello, I`am</span>
+                    <span class="white-text" id="myText">Hello, I`am</span>
                     <span class="green-text">Melnichuk Ilya<br></span>
-                    <span id="myText">Backend</span>
+                    <span class="white-text" id="myText">Backend</span>
                     <span class="green-text">Developer</span>
                 </h1>
 
@@ -120,7 +135,7 @@
 
             <div>
 
-                <p id="myText">
+                <p class="white-text" id="myText">
                     I create reliable, secure backend services and API`s in Python.
                 </p>
 
@@ -129,39 +144,39 @@
             <div class="my-stack">
 
                 <div class="sciense">
-                    <p id="myText">
+                    <p class="white-text" id="myText">
                         <i class="fa-solid fa-circle green-text" style="transform: scale(0.6);"></i>
                         Python
                     </p>
                 </div>
                 <div class="sciense white-text">
-                    <p id="myText">
+                    <p class="white-text" id="myText">
                         <i class="fa-solid fa-circle blue-text" style="transform: scale(0.6);"></i>
                         Django
                     </p>
                 </div>
                 <div class="sciense white-text">
-                    <p id="myText">
+                    <p class="white-text" id="myText">
                         <i class="fa-solid fa-circle green-text" style="transform: scale(0.6);"></i>
                         DRF
                     </p>
                 </div>
                 <div class="sciense white-text">
-                    <p id="myText">
+                    <p class="white-text" id="myText">
                         <i class="fa-solid fa-circle blue-text" style="transform: scale(0.6);"></i>
                         FastAPI
                     </p>
                 </div>
                 <div class="sciense white-text">
-                    <p id="myText">
+                    <p class="white-text" id="myText">
                         <i class="fa-solid fa-circle green-text" style="transform: scale(0.6);"></i>
                         Flask
                     </p>
-                </div>
+                </div> 
 
             </div>
 
-            <div id="myText">
+            <div class="white-text" id="myText">
 
                 <a class="watch-project-link" href="https://github.com/Ilya-17-m">
                     <button class="project-btn btn">
@@ -169,8 +184,8 @@
                         Watch my project
                     </button>
                 </a>
-
-
+            
+                 
                 <button class="call-button btn" id="openModal">
                     <i class="fa-solid fa-phone-volume green-text"></i>
                     Contact with me
@@ -180,7 +195,7 @@
 
         </div>
 
-        <div class="my-console" id="console">
+        <div class="my-console my-console-dark" id="console">
 
             <div class="mac-style">
                 <i class="fa-solid fa-circle" style="color: #F24527;"></i>
@@ -190,7 +205,7 @@
 
             <div class="console">
 
-                <p class="console-text"  id="my-console-text">
+                <p class="console-text white-text console-dark"  id="my-console-text">
 
                     <br><span class="green-text">$ whoami<br><br></span>
 
@@ -226,10 +241,10 @@
 
     </section>
 
-    <section class="worker-information" id="second-section">
+    <section class="worker-information second-sec-dark" id="second-section">
 
         <div  class="about-me skills-block">
-            <h2 id="myText">
+            <h2 class="white-text" id="myText">
                 <i class="fa-regular fa-user green-text">&emsp;</i>
                 About me
             </h2>
@@ -238,39 +253,39 @@
                  create REST API.<br> I love clean code, automation and solving
                  complex problems.
             </p>
-
+            
         </div>
 
         <div class="worker">
 
             <div class="work-i">
 
-                <div class="worker-c" id="myInfo">
+                <div class="worker-c me-info-dark" id="myInfo">
                     <h2>
                         <i class="fa-solid fa-calendar-days green-text">&emsp;</i>
                     </h2>
-                    <p id="myText">
+                    <p class="white-text" id="myText">
                         <span class="gray-text">Age<br></span>
                         <span>18</span>
                     </p>
                 </div>
 
-                <div class="worker-c" id="myInfo">
+                <div class="worker-c me-info-dark" id="myInfo">
                     <h2>
                         <i class="fa-solid fa-location-dot green-text">&emsp;</i>
                     </h2>
-                    <p id="myText">
+                    <p class="white-text" id="myText">
                         <span class="gray-text">City<br></span>
                         <span>Almaty, Kazakhstan</span>
                     </p>
                 </div>
             </div>
 
-            <div class="active-work" id="employment">
+            <div class="active-work employment-dark" id="employment">
                 <h2>
                     <i class="fa-solid fa-code green-text">&emsp;</i>
                 </h2>
-                <p id="myText">
+                <p class="white-text" id="myText">
                     <span class="gray-text">
                         Employment<br>
                     </span>
@@ -278,14 +293,14 @@
                 </p>
             </div>
         </div>
-
+        
 
     </section>
 
-    <section class="skills-section" id="skills">
+    <section class="skills-section skills-section-dark" id="skills">
 
         <div class="skills-block">
-            <h2 id="myText">
+            <h2 class="white-text" id="myText">
                 <i class="fa-solid fa-code green-text">&emsp;</i>
                 Skills
             </h1>
@@ -294,103 +309,103 @@
         <div class="just-block"></div>
 
         <div class="swiper">
-
+            
             <div class="swiper-wrapper">
-
-                <div class="swiper-slide" id="swiper-text">
+                
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
                     Python
                 </div>
-                <div class="swiper-slide" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg">
                     Django
                 </div>
-                <div class="swiper-slide" id="swiper-text">
-                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" 
                     style="filter: brightness(0) invert(1);"/>
                     Flask
                 </div>
-                <div class="swiper-slide" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg">
                     FastAPI
                 </div>
-                <div class="swiper-slidet" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">
                     PostgreSQL
                 </div>
-                <div class="swiper-slide" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
                     Docker
                 </div>
-                <div class="swiper-slide" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
                     Git
                 </div>
-                <div class="swiper-slide" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
                     HTML
                 </div>
-                <div class="swiper-slide" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
                     CSS
                 </div>
-                <div class="swiper-slide" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
                     JavaScript
                 </div>
-                <div class="swiper-slidet" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.simpleicons.org/sqlalchemy"/>
                     SQLAlchemy
                 </div>
-                <div class="swiper-slide" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.simpleicons.org/grafana"/>
                     Grafana
                 </div>
-                <div class="swiper-slide" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.simpleicons.org/prometheus"/>
                     Prometheus
                 </div>
-                <div class="swiper-slide" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.simpleicons.org/nginx"/>
                     Nginx
                 </div>
-                <div class="swiper-slide" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"/>
                     Redis
                 </div>
-                <div class="swiper-slide" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"/>
                     Linux
                 </div>
-                <div class="swiper-slide" id="swiper-text">
+                <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.simpleicons.org/celery"/>
                     Celery
                 </div>
-
+                
             </div>
 
         </div>
 
         <div class="just-block"></div>
-
+        
     </section>
 
-    <section class="worker-projects" id="worker-projects">
-
+    <section class="worker-projects projects-section-dark" id="worker-projects">
+        
         <div class="skills-block">
-            <h2 id="myText">
+            <h2 class="white-text" id="myText">
                 <i class="fa-solid fa-folder-open green-text">&emsp;</i>
                 Projects
             </h2>
         </div>
 
-
+        
         <div class="my-projects">
 
-            <div class="project" id="sciense-block">
+            <div class="project project-dark" id="sciense-block">
 
                 <div>
-                    <p class="project-title" id="project-title">
+                    <p class="project-title white-text" id="project-title">
                         Megano shop
                     </p>
                 </div>
@@ -404,25 +419,25 @@
 
                 <div  class="project-technologes">
 
-                    <div class="sciense" id="sciense">
+                    <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
                             DRF
                         </p>
                     </div>
 
-                    <div class="sciense" id="sciense">
+                    <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
                             PostgreSQL
                         </p>
                     </div>
 
-                    <div class="sciense" id="sciense">
+                    <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
                             Docker
                         </p>
                     </div>
 
-                    <div class="sciense" id="sciense">
+                    <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
                             Grafana
                         </p>
@@ -441,13 +456,13 @@
                         </span>
                     </p>
                 </div>
-
+                
             </div>
 
-            <div class="project" id="sciense-block">
+            <div class="project project-dark" id="sciense-block">
 
                 <div>
-                    <p class="project-title" id="project-title">
+                    <p class="project-title white-text" id="project-title">
                         Clone Twitter
                     </p>
                 </div>
@@ -461,25 +476,25 @@
 
                 <div class="project-technologes">
 
-                    <div class="sciense"id="sciense">
+                    <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
                             FastAPI
                         </p>
                     </div>
 
-                    <div class="sciense"id="sciense">
+                    <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
                             PostgreSQL
                         </p>
                     </div>
 
-                    <div class="sciense"id="sciense">
+                    <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
                             SQLAlchemy
                         </p>
                     </div>
 
-                    <div class="sciense"id="sciense">
+                    <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
                             Nginx
                         </p>
@@ -501,10 +516,10 @@
 
             </div>
 
-            <div class="project" id="sciense-block">
+            <div class="project project-dark" id="sciense-block">
 
                 <div>
-                    <p class="project-title" id="project-title">
+                    <p class="project-title white-text" id="project-title">
                         Tracking habits
                     </p>
                 </div>
@@ -519,25 +534,25 @@
 
                 <div class="project-technologes">
 
-                    <div class="sciense"id="sciense">
+                    <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
                             TeleBot
                         </p>
                     </div>
 
-                    <div class="sciense"id="sciense">
+                    <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
                             FastAPI
                         </p>
                     </div>
 
-                    <div class="sciense"id="sciense">
+                    <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
                             SQLAlchemy
                         </p>
                     </div>
 
-                    <div class="sciense"id="sciense">
+                    <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
                             PostgreSQL
                         </p>
@@ -567,11 +582,11 @@
 
     </section>
 
-    <section id="contacts">
+    <section class="fifth-section-dark" id="contacts">
 
         <div class="education">
-
-            <div id="myText">
+            
+            <div class="white-text" id="myText">
                 <h3>
                     <i class="fa-solid fa-graduation-cap green-text">&nbsp;</i>
                     Education
@@ -606,7 +621,7 @@
 
             </div>
 
-            <div id="myText">
+            <div class="white-text" id="myText">
                 <h3>
                     <i class="fa-solid fa-address-card green-text">&nbsp;</i>
                     Contacts
@@ -650,13 +665,13 @@
             </div>
 
             <div id="program-style-img">
-
+                <img class="prog-img" src="img/program-dark.jpeg" alt="">
             </div>
         </div>
 
     </section>
 
-    <footer id="footer">
+    <footer class="footer-dark" id="footer">
         <p class="gray-text">
             <i class="fa-solid fa-circle box" style="transform: scale(0.4);"></i>
             2026 Ilya Melnichuk | Backend Developer
@@ -670,25 +685,25 @@
 
             <form id="contact-form">
                 <div class="name">
-                    <div id="modal-text">
+                    <div class="name-value modal-text-dark" id="modal-text">
                         <p class="name-value">First name</p>
-                        <input id="firstName" class="name-style" type="text" placeholder="Ivan">
+                        <input id="firstName" class="name-style input-style-dark" type="text" placeholder="Ivan">
                     </div>
 
-                    <div id="modal-text">
+                    <div class="name-value modal-text-dark" id="modal-text">
                         <p class="name-value">Last name</p>
-                        <input id="lastName" class="name-style" type="text" placeholder="Ivanov">
+                        <input id="lastName" class="name-style input-style-dark" type="text" placeholder="Ivanov">
                     </div>
                 </div>
 
-                <div class="user-tel" id="tel-number">
+                <div class="user-tel modal-text-dark" id="tel-number">
                     <p class="tel-value">Telephone number</p>
-                    <input id="phone" class="name-style" type="tel" placeholder="+7-7(XX)-(XXX)-(XX)-(XX)">
+                    <input id="phone" class="name-style input-style-dark" type="tel" placeholder="+7-7(XX)-(XXX)-(XX)-(XX)">
                 </div>
 
-                <div class="user-tel" id="topic">
+                <div class="user-tel modal-text-dark" id="topic">
                     <p class="topic-value">Topic</p>
-                    <textarea id="message" class="name-style bigTextArea"
+                    <textarea id="message" class="name-style input-style-dark bigTextArea" 
                     placeholder="Job offer or project question" style="max-height: 40px;"></textarea>
                 </div>
 
@@ -706,7 +721,9 @@
         </div>
     </div>
 
-    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/modal.js"></script>
+    <script type="module" src="js/theme.js"></script>
+    <script src="js/languages.js"></script>
 
 </body>
 </html>

@@ -1,6 +1,7 @@
 
 
 function darkHeaderStyle() {
+
   const whiteText = document.querySelectorAll('#myText');
   const header = document.querySelector('header');
 
@@ -13,6 +14,7 @@ function darkHeaderStyle() {
 
 
 function darkFirstSectionStyle() {
+
     const secEl = document.querySelector('#first-section');
     const consoleEl = document.querySelector('#console');
     const myconsoleEl = document.querySelector('#my-console-text');
@@ -24,6 +26,7 @@ function darkFirstSectionStyle() {
 
 
 function darkSecondSectionStyle() {
+
     const secEl = document.querySelector('#second-section');
     const meInfoEl = document.querySelectorAll('#myInfo');
     const emplEl = document.querySelector('#employment');
@@ -38,6 +41,7 @@ function darkSecondSectionStyle() {
 
 
 function darkThirdSectionStyle() {
+
     const secEl = document.querySelector('#skills');
     const swiperEl = document.querySelectorAll('#swiper-text');
 
@@ -50,6 +54,7 @@ function darkThirdSectionStyle() {
 
 
 function darkFourthSectionStyle() {
+
     const secEl = document.querySelector('#worker-projects');
     const projectTitle = document.querySelectorAll('#project-title');
     const scienseEl = document.querySelectorAll('#sciense');
@@ -72,6 +77,7 @@ function darkFourthSectionStyle() {
 
 
 function darkFifthSectionStyle() {
+
     const secEl = document.querySelector('#contacts');
 
     secEl.className = 'fifth-section-dark';
@@ -79,12 +85,14 @@ function darkFifthSectionStyle() {
 
 
 function darkFooterStyle() {
+
     const secEl = document.querySelector('#footer');
 
     secEl.className = 'footer-dark';
 }
 
 function darkModalStyle() {
+
     const modalContent = document.querySelector('#modal-content');
     const modalText = document.querySelectorAll('#modal-text');
     const telNumber = document.querySelector('#tel-number');
@@ -98,11 +106,12 @@ function darkModalStyle() {
     modalContent.style.backgroundColor = '#090F1B';
     telNumber.className = 'user-tel modal-text-dark';
     topic.className = 'user-tel modal-text-dark';
+    
     firstName.className = 'name-style input-style-dark';
     lastName.className = 'name-style input-style-dark';
     phone.className = 'name-style input-style-dark';
     message.className = 'name-style input-style-dark';
-
+    
     modalText.forEach(element => {
         element.className = 'name-value modal-text-dark';
     });

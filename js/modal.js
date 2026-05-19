@@ -1,4 +1,7 @@
-import {defaultTheme} from './theme.js'
+import darkThemeStyle from './dark-theme.js'
+import lightThemeStyle from './light-theme.js';
+import changeTheme from './theme.js';
+
 
 const swiperSkills = new Swiper('.swiper', {
   
@@ -39,7 +42,3 @@ window.onclick = (e) => {
         modal.style.display = 'none';
     }
 };
-
-
-defaultTheme()
-
