@@ -95,28 +95,32 @@ function darkModalStyle() {
 
     const modalContent = document.querySelector('#modal-content');
     const modalText = document.querySelectorAll('#modal-text');
-    const telNumber = document.querySelector('#tel-number');
+    const telNumber = document.querySelectorAll('#tel-number');
     const topic = document.querySelector('#topic');
 
     const firstName = document.querySelector('#firstName');
     const lastName = document.querySelector('#lastName');
     const phone = document.querySelector('#phone');
     const message = document.querySelector('#message');
+    const email = document.querySelector('#email');
 
     modalContent.style.backgroundColor = '#090F1B';
-    telNumber.className = 'user-tel modal-text-dark';
     topic.className = 'user-tel modal-text-dark';
-    
+
     firstName.className = 'name-style input-style-dark';
     lastName.className = 'name-style input-style-dark';
     phone.className = 'name-style input-style-dark';
     message.className = 'name-style input-style-dark';
-    
+    email.className = 'name-style input-style-dark';
+
     modalText.forEach(element => {
         element.className = 'name-value modal-text-dark';
     });
-}
 
+    telNumber.forEach(element => {
+        element.className = 'user-tel modal-text-dark';
+    });
+}
 
 // All dark style functions
 export default function darkThemeStyle() {

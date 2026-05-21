@@ -11,7 +11,7 @@ function lightHeaderStyle() {
 
   header.className = 'header-light head-information';
 
-};
+}
 
 
 function lightFirstSectionStyle() {
@@ -23,7 +23,7 @@ function lightFirstSectionStyle() {
     consoleEl.className = 'my-console my-console-light';
     myconsoleEl.className = 'console-text black-text console-light';
 
-};
+}
 
 
 function lightSecondSectionStyle() {
@@ -37,7 +37,7 @@ function lightSecondSectionStyle() {
         meInfoEl.forEach(element => {
         element.className = 'worker-c me-info-light';
     });
-};
+}
 
 
 function lightThirdSectionStyle() {
@@ -93,25 +93,30 @@ function lightModalStyle() {
 
     const modalContent = document.querySelector('#modal-content');
     const modalText = document.querySelectorAll('#modal-text');
-    const telNumber = document.querySelector('#tel-number');
+    const telNumber = document.querySelectorAll('#tel-number');
     const topic = document.querySelector('#topic');
 
     const firstName = document.querySelector('#firstName');
     const lastName = document.querySelector('#lastName');
     const phone = document.querySelector('#phone');
     const message = document.querySelector('#message');
+    const email = document.querySelector('#email');
 
-    modalContent.style.backgroundColor = '#ffffff';
-    telNumber.className = 'user-tel modal-text-light';
+    modalContent.style.backgroundColor = '#e3e3e3';
     topic.className = 'user-tel modal-text-light';
-    
+
     firstName.className = 'name-style input-style-light';
     lastName.className = 'name-style input-style-light';
     phone.className = 'name-style input-style-light';
     message.className = 'name-style input-style-light';
-    
+    email.className = 'name-style input-style-light';
+
     modalText.forEach(element => {
         element.className = 'name-value modal-text-light';
+    });
+
+    telNumber.forEach(element => {
+        element.className = 'user-tel modal-text-light';
     });
 }
 

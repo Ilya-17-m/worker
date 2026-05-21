@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/dark.css">
-    <link rel="stylesheet" href="css/light.css">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="../../static/css/dark.css">
+    <link rel="stylesheet" href="../../static/css/light.css">
     <title>Ilya Melnichuk</title>
 
     <!-- Connect fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+
     <!-- Library connect Choices.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@11.1.0/public/assets/styles/choices.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/choices.js@11.1.0/public/assets/scripts/choices.min.js"></script>
@@ -22,12 +22,12 @@
 
     <!-- Library connection JustValidate -->
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-          
+
 </head>
 <body>
 
     <header class="head-information header-dark">
-        
+
         <div class="company-name">
             <p>
                 <span class="white-text" id="myText">{ Backend.</span>
@@ -40,7 +40,7 @@
 
             <div class="media">
                 <p>
-                    <a class="white-text" id="myText" href="#aboutme">Worker</a>
+                    <a class="white-text" id="myText" href="#first-section">Worker</a>
                 </p>
             </div>
 
@@ -91,21 +91,21 @@
             </div>
 
             <div class="media" style="transform: scale(0.6);">
-                
+
                 <select class="choice-languages" id="language">
                     <option value="EN">EN</option>
                     <option value="RU">RU</option>
                     <option value="KZ">KZ</option>
                 </select>
-                
+
             </div>
 
             <div class="media">
-                
+
                 <button class="theme-button" id="button-theme">
                     <i class="fa-regular fa-moon" id="theme-seluette"></i>
                 </button>
-                
+
             </div>
 
         </div>
@@ -172,7 +172,7 @@
                         <i class="fa-solid fa-circle green-text" style="transform: scale(0.6);"></i>
                         Flask
                     </p>
-                </div> 
+                </div>
 
             </div>
 
@@ -184,8 +184,8 @@
                         Watch my project
                     </button>
                 </a>
-            
-                 
+
+
                 <button class="call-button btn" id="openModal">
                     <i class="fa-solid fa-phone-volume green-text"></i>
                     Contact with me
@@ -253,7 +253,7 @@
                  create REST API.<br> I love clean code, automation and solving
                  complex problems.
             </p>
-            
+
         </div>
 
         <div class="worker">
@@ -293,7 +293,7 @@
                 </p>
             </div>
         </div>
-        
+
 
     </section>
 
@@ -309,9 +309,9 @@
         <div class="just-block"></div>
 
         <div class="swiper">
-            
+
             <div class="swiper-wrapper">
-                
+
                 <div class="swiper-slide swiper-text-dark" id="swiper-text">
                     <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
                     Python
@@ -321,7 +321,7 @@
                     Django
                 </div>
                 <div class="swiper-slide swiper-text-dark" id="swiper-text">
-                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" 
+                    <img class="pic" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
                     style="filter: brightness(0) invert(1);"/>
                     Flask
                 </div>
@@ -381,17 +381,17 @@
                     <img class="pic" src="https://cdn.simpleicons.org/celery"/>
                     Celery
                 </div>
-                
+
             </div>
 
         </div>
 
         <div class="just-block"></div>
-        
+
     </section>
 
     <section class="worker-projects projects-section-dark" id="worker-projects">
-        
+
         <div class="skills-block">
             <h2 class="white-text" id="myText">
                 <i class="fa-solid fa-folder-open green-text">&emsp;</i>
@@ -399,7 +399,7 @@
             </h2>
         </div>
 
-        
+
         <div class="my-projects">
 
             <div class="project project-dark" id="sciense-block">
@@ -456,7 +456,7 @@
                         </span>
                     </p>
                 </div>
-                
+
             </div>
 
             <div class="project project-dark" id="sciense-block">
@@ -585,7 +585,7 @@
     <section class="fifth-section-dark" id="contacts">
 
         <div class="education">
-            
+
             <div class="white-text" id="myText">
                 <h3>
                     <i class="fa-solid fa-graduation-cap green-text">&nbsp;</i>
@@ -665,7 +665,7 @@
             </div>
 
             <div id="program-style-img">
-                <img class="prog-img" src="img/program-dark.jpeg" alt="">
+                <img class="prog-img" src="../../static/img/program-dark.jpeg" alt="">
             </div>
         </div>
 
@@ -696,6 +696,11 @@
                     </div>
                 </div>
 
+                <div class="name-value modal-text-dark" id="tel-number">
+                    <p class="topic-value">Email</p>
+                    <input id="email" class="name-style input-style-dark" type="email" placeholder="ivan.ivanov@gmail.com">
+                </div>
+
                 <div class="user-tel modal-text-dark" id="tel-number">
                     <p class="tel-value">Telephone number</p>
                     <input id="phone" class="name-style input-style-dark" type="tel" placeholder="+7-7(XX)-(XXX)-(XX)-(XX)">
@@ -703,7 +708,7 @@
 
                 <div class="user-tel modal-text-dark" id="topic">
                     <p class="topic-value">Topic</p>
-                    <textarea id="message" class="name-style input-style-dark bigTextArea" 
+                    <textarea id="message" class="name-style input-style-dark bigTextArea"
                     placeholder="Job offer or project question" style="max-height: 40px;"></textarea>
                 </div>
 
@@ -721,9 +726,9 @@
         </div>
     </div>
 
-    <script type="module" src="js/modal.js"></script>
-    <script type="module" src="js/theme.js"></script>
-    <script src="js/languages.js"></script>
+    <script type="module" src="../../static/js/modal.js"></script>
+    <script type="module" src="../../static/js/theme.js"></script>
+    <script src="../../static/js/languages.js"></script>
 
 </body>
 </html>

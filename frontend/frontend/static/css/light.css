@@ -89,3 +89,8 @@
 .modal-text-light {
     color: black;
 }
+
+.input-style-light {
+    background: white;
+    height: 30px;
+}

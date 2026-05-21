@@ -1,0 +1,56 @@
+openapi: 3.0.3
+info:
+  title: Swagger Resume project
+  version: 1.0.0
+tags:
+  - name: work
+
+
+
+paths:
+  /work:
+    post:
+      tags:
+        - work
+      description: 'create a new work'
+      parameters:
+
+        - name: first name
+          in: query
+          description: first name
+          required: true
+          schema:
+            type: string
+
+        - name: last name
+          in: query
+          description: last name
+          required: true
+          schema:
+            type: string
+
+        - name: email
+          in: query
+          description: email
+          required: true
+          schema:
+            type: string
+
+        - name: telephone number
+          in: query
+          description: telephone number
+          required: true
+          schema:
+            type: string
+
+        - name: topic
+          in: query
+          description: topic
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+        '500':
+          description: unsuccessful operation
