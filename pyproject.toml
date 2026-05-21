@@ -1,0 +1,21 @@
+[project]
+name = "worker"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ilya"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django (>=6.0.5,<7.0.0)",
+    "djangorestframework (>=3.17.1,<4.0.0)",
+    "python-dotenv (>=1.2.2,<2.0.0)",
+    "uvicorn (>=0.47.0,<0.48.0)",
+    "setuptools (>=82.0.1,<83.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
