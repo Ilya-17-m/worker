@@ -23,6 +23,6 @@ class CreateWorkAPIView(APIView):
             many=True
         )
         if serializer.is_valid():
-            return Response({}, status=status.HTTP_201_CREATED)
+            return Response({'message': 'Sent successfully!'}, status=status.HTTP_201_CREATED)
 
-        return Response({}, status=status.HTTP_400_BAD_REQUEST)
+        return Response({'message': 'Something went wrong...'}, status=status.HTTP_400_BAD_REQUEST)
