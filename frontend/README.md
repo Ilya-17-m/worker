@@ -17,6 +17,7 @@
 + Swiper
 + FontAwesome
 + Devicon
++ Choices.js
 
 
 ## Connect package:

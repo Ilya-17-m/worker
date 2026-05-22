@@ -1,6 +1,6 @@
 
 
-function lightHeaderStyle() {
+async function lightHeaderStyle() {
 
   const whiteText = document.querySelectorAll('#myText');
   const header = document.querySelector('header');
@@ -14,7 +14,7 @@ function lightHeaderStyle() {
 }
 
 
-function lightFirstSectionStyle() {
+async function lightFirstSectionStyle() {
     const secEl = document.querySelector('#first-section');
     const consoleEl = document.querySelector('#console');
     const myconsoleEl = document.querySelector('#my-console-text');
@@ -26,7 +26,7 @@ function lightFirstSectionStyle() {
 }
 
 
-function lightSecondSectionStyle() {
+async function lightSecondSectionStyle() {
     const secEl = document.querySelector('#second-section');
     const meInfoEl = document.querySelectorAll('#myInfo');
     const emplEl = document.querySelector('#employment');
@@ -40,7 +40,7 @@ function lightSecondSectionStyle() {
 }
 
 
-function lightThirdSectionStyle() {
+async function lightThirdSectionStyle() {
     const secEl = document.querySelector('#skills');
     const swiperEl = document.querySelectorAll('#swiper-text');
 
@@ -52,7 +52,7 @@ function lightThirdSectionStyle() {
 }
 
 
-function lightFourthSectionStyle() {
+async function lightFourthSectionStyle() {
     const secEl = document.querySelector('#worker-projects');
     const projectTitle = document.querySelectorAll('#project-title');
     const scienseEl = document.querySelectorAll('#sciense');
@@ -75,21 +75,21 @@ function lightFourthSectionStyle() {
 }
 
 
-function lightFifthSectionStyle() {
+async function lightFifthSectionStyle() {
     const secEl = document.querySelector('#contacts');
 
     secEl.className = 'fifth-section-light';
 }
 
 
-function lightFooterStyle() {
+async function lightFooterStyle() {
     const secEl = document.querySelector('#footer');
 
     secEl.className = 'footer-light';
 }
 
 
-function lightModalStyle() {
+async function lightModalStyle() {
 
     const modalContent = document.querySelector('#modal-content');
     const modalText = document.querySelectorAll('#modal-text');
@@ -122,13 +122,13 @@ function lightModalStyle() {
 
 
 // All light style functions
-export default function lightThemeStyle() {
-    lightHeaderStyle()
-    lightFirstSectionStyle()
-    lightSecondSectionStyle()
-    lightThirdSectionStyle()
-    lightFourthSectionStyle()
-    lightFifthSectionStyle()
-    lightFooterStyle()
-    lightModalStyle()
+export default async function lightThemeStyle() {
+    await lightHeaderStyle()
+    await lightFirstSectionStyle()
+    await lightSecondSectionStyle()
+    await lightThirdSectionStyle()
+    await lightFourthSectionStyle()
+    await lightFifthSectionStyle()
+    await lightFooterStyle()
+    await lightModalStyle()
 };

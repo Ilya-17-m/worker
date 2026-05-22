@@ -1,6 +1,6 @@
 
 
-function darkHeaderStyle() {
+async function darkHeaderStyle() {
 
   const whiteText = document.querySelectorAll('#myText');
   const header = document.querySelector('header');
@@ -13,7 +13,7 @@ function darkHeaderStyle() {
 }
 
 
-function darkFirstSectionStyle() {
+async function darkFirstSectionStyle() {
 
     const secEl = document.querySelector('#first-section');
     const consoleEl = document.querySelector('#console');
@@ -25,7 +25,7 @@ function darkFirstSectionStyle() {
 }
 
 
-function darkSecondSectionStyle() {
+async function darkSecondSectionStyle() {
 
     const secEl = document.querySelector('#second-section');
     const meInfoEl = document.querySelectorAll('#myInfo');
@@ -40,7 +40,7 @@ function darkSecondSectionStyle() {
 }
 
 
-function darkThirdSectionStyle() {
+async function darkThirdSectionStyle() {
 
     const secEl = document.querySelector('#skills');
     const swiperEl = document.querySelectorAll('#swiper-text');
@@ -53,7 +53,7 @@ function darkThirdSectionStyle() {
 }
 
 
-function darkFourthSectionStyle() {
+async function darkFourthSectionStyle() {
 
     const secEl = document.querySelector('#worker-projects');
     const projectTitle = document.querySelectorAll('#project-title');
@@ -76,7 +76,7 @@ function darkFourthSectionStyle() {
 }
 
 
-function darkFifthSectionStyle() {
+async function darkFifthSectionStyle() {
 
     const secEl = document.querySelector('#contacts');
 
@@ -84,14 +84,14 @@ function darkFifthSectionStyle() {
 }
 
 
-function darkFooterStyle() {
+async function darkFooterStyle() {
 
     const secEl = document.querySelector('#footer');
 
     secEl.className = 'footer-dark';
 }
 
-function darkModalStyle() {
+async function darkModalStyle() {
 
     const modalContent = document.querySelector('#modal-content');
     const modalText = document.querySelectorAll('#modal-text');
@@ -123,13 +123,13 @@ function darkModalStyle() {
 }
 
 // All dark style functions
-export default function darkThemeStyle() {
-    darkHeaderStyle()
-    darkFirstSectionStyle()
-    darkSecondSectionStyle()
-    darkThirdSectionStyle()
-    darkFourthSectionStyle()
-    darkFifthSectionStyle()
-    darkFooterStyle()
-    darkModalStyle()
+export default async function darkThemeStyle() {
+    await darkHeaderStyle()
+    await darkFirstSectionStyle()
+    await darkSecondSectionStyle()
+    await darkThirdSectionStyle()
+    await darkFourthSectionStyle()
+    await darkFifthSectionStyle()
+    await darkFooterStyle()
+    await darkModalStyle()
 }

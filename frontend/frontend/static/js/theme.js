@@ -5,7 +5,7 @@ import lightThemeStyle from './light-theme.js';
 const btnEl = document.querySelector('#button-theme');
 
 
-function checkTheme() {
+async function checkTheme() {
     const theme = localStorage.getItem('theme')
     if (theme) {
         return localStorage.getItem('theme');
@@ -16,12 +16,12 @@ function checkTheme() {
 }
 
 
-export default function changeTheme() {
+export default async function changeTheme() {
     const themeEL = document.getElementById("theme-seluette");
     const programBlock = document.getElementById("program-style-img");
     const imgEl = document.createElement('img');
 
-    const theme = checkTheme()
+    const theme = await checkTheme()
 
     programBlock.innerHTML = ''
 
@@ -37,7 +37,7 @@ export default function changeTheme() {
         btnEl.style.color = '#040B15';
         btnEl.style.border = 'solid black 2px';
 
-        lightThemeStyle()
+        await lightThemeStyle()
 
     } else {
 
@@ -54,18 +54,18 @@ export default function changeTheme() {
         btnEl.style.color = 'white';
         btnEl.style.border = 'solid white 2px';
 
-      darkThemeStyle()
+      await darkThemeStyle()
 
     }
 }
 
 
-btnEl.addEventListener('click', function () {
-    changeTheme()
+btnEl.addEventListener('click', async function () {
+    await changeTheme()
 });
 
 
-export function defaultTheme() {
+export async function defaultTheme() {
     const theme = localStorage.getItem('theme')
     const themeEL = document.querySelector("#theme-seluette");
     const programBlock = document.getElementById("program-style-img");
@@ -92,8 +92,8 @@ export function defaultTheme() {
     btnEl.style.border = 'solid white 2px';
     themeEL.className = 'fa-regular fa-moon'
 
-    return darkThemeStyle()
+    return  darkThemeStyle()
 }
 
 
-defaultTheme()
+await defaultTheme()

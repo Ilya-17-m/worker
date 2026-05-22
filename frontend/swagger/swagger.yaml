@@ -52,5 +52,5 @@ paths:
       responses:
         '200':
           description: successful operation
-        '500':
+        '400':
           description: unsuccessful operation
