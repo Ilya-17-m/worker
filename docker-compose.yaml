@@ -11,3 +11,12 @@ services:
       - '8000:8000'
 
 
+  grafana:
+    image: grafana/grafana:5.1.0
+    ports:
+      - '3000:3000'
+
+  loki:
+    image: grafana/loki:latest
+    ports:
+      - '3100:3100'

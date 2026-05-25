@@ -36,43 +36,16 @@ pushFormButton.addEventListener('click', function (e) {
             email, phone, topic
         )
 
-        const modalMessage = document.querySelector('#modal-message')
-        const modalMessageContent = document.querySelector(
-            '#modal-message-content'
-        )
-        const text = document.querySelector('#modal-message-text')
+        if (result) {
+            console.log('Success result:', result)
+        } else {
+            console.log('Error result:', result)
+        }
 
-
-        modalMessage.className = 'modal-message';
-        modalMessage.style.display = 'flex';
-        modalMessageContent.style.backgroundColor = 'green';
-        text.textContent = result['message'];
-
-        window.onclick = (e) => {
-            if (e.target === modalMessage) {
-                modalMessage.style.display = 'none';
-            }
-        };
 
     } else {
 
         e.preventDefault()
-        const modalMessage = document.querySelector('#modal-message')
-        const modalMessageContent = document.querySelector(
-            '#modal-message-content'
-        )
-        const text = document.querySelector('#modal-message-text')
-
-
-        modalMessage.className = 'modal-message';
-        modalMessage.style.display = 'flex';
-        modalMessageContent.style.backgroundColor = 'red';
-        text.textContent = 'Fill in all required fields!';
-
-        window.onclick = (e) => {
-            if (e.target === modalMessage) {
-                modalMessage.style.display = 'none';
-            }
-        };
+        console.log('Write all fields, please!!!')
     }
 });

@@ -1,31 +1,47 @@
 
 
-async function darkHeaderStyle() {
+function darkHeaderStyle() {
 
   const whiteText = document.querySelectorAll('#myText');
   const header = document.querySelector('header');
+
+  const worker = document.querySelector('#worker-link');
+  const skills = document.querySelector('#skills-link');
+  const projects = document.querySelector('#projects-link');
+  const contacts = document.querySelector('#contacts-link');
 
   whiteText.forEach(element => {
     element.className = 'white-text';
   });
 
   header.className = 'header-dark head-information';
+
+  worker.className = 'white-text';
+  skills.className = 'white-text';
+  projects.className = 'white-text';
+  contacts.className = 'white-text';
 }
 
 
-async function darkFirstSectionStyle() {
+function darkFirstSectionStyle() {
 
     const secEl = document.querySelector('#first-section');
     const consoleEl = document.querySelector('#console');
     const myconsoleEl = document.querySelector('#my-console-text');
 
+    const whoami = document.querySelector('#whoami');
+    const iCreate = document.querySelector('#i-create');
+
     consoleEl.className = 'my-console my-console-dark';
     myconsoleEl.className = 'console-text white-text console-dark';
     secEl.className = 'greeting first-sec-dark';
+
+    whoami.className = 'white-text';
+    iCreate.className = 'white-text';
 }
 
 
-async function darkSecondSectionStyle() {
+function darkSecondSectionStyle() {
 
     const secEl = document.querySelector('#second-section');
     const meInfoEl = document.querySelectorAll('#myInfo');
@@ -40,7 +56,7 @@ async function darkSecondSectionStyle() {
 }
 
 
-async function darkThirdSectionStyle() {
+function darkThirdSectionStyle() {
 
     const secEl = document.querySelector('#skills');
     const swiperEl = document.querySelectorAll('#swiper-text');
@@ -53,7 +69,7 @@ async function darkThirdSectionStyle() {
 }
 
 
-async function darkFourthSectionStyle() {
+function darkFourthSectionStyle() {
 
     const secEl = document.querySelector('#worker-projects');
     const projectTitle = document.querySelectorAll('#project-title');
@@ -76,7 +92,7 @@ async function darkFourthSectionStyle() {
 }
 
 
-async function darkFifthSectionStyle() {
+function darkFifthSectionStyle() {
 
     const secEl = document.querySelector('#contacts');
 
@@ -84,14 +100,14 @@ async function darkFifthSectionStyle() {
 }
 
 
-async function darkFooterStyle() {
+function darkFooterStyle() {
 
     const secEl = document.querySelector('#footer');
 
     secEl.className = 'footer-dark';
 }
 
-async function darkModalStyle() {
+function darkModalStyle() {
 
     const modalContent = document.querySelector('#modal-content');
     const modalText = document.querySelectorAll('#modal-text');
@@ -123,13 +139,13 @@ async function darkModalStyle() {
 }
 
 // All dark style functions
-export default async function darkThemeStyle() {
-    await darkHeaderStyle()
-    await darkFirstSectionStyle()
-    await darkSecondSectionStyle()
-    await darkThirdSectionStyle()
-    await darkFourthSectionStyle()
-    await darkFifthSectionStyle()
-    await darkFooterStyle()
-    await darkModalStyle()
+export default function darkThemeStyle() {
+    darkHeaderStyle()
+    darkFirstSectionStyle()
+    darkSecondSectionStyle()
+    darkThirdSectionStyle()
+    darkFourthSectionStyle()
+    darkFifthSectionStyle()
+    darkFooterStyle()
+    darkModalStyle()
 }

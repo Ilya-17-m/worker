@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="../../static/css/style.css">
     <link rel="stylesheet" href="../../static/css/dark.css">
     <link rel="stylesheet" href="../../static/css/light.css">
-    <title>
-        {% trans "Ilya Melnichuk" %}
-    </title>
+    <title>Ilya Melnichuk</title>
 
     <!-- Connect fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -21,9 +19,6 @@
     <!-- Library connection Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-    <!-- Library connection JustValidate -->
-    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 
 </head>
 <body>
@@ -42,25 +37,25 @@
 
             <div class="media">
                 <p>
-                    <a class="white-text" id="myText" href="#first-section">Worker</a>
+                    <a class="white-text" id="worker-link" href="#aboutme">Worker</a>
                 </p>
             </div>
 
             <div class="media">
                 <p>
-                    <a class="white-text" id="myText" href="#skills">Skills</a>
+                    <a class="white-text" id="skills-link" href="#skills">Skills</a>
                 </p>
             </div>
 
             <div class="media">
                 <p>
-                    <a class="white-text" id="myText" href="#projects">Projects</a>
+                    <a class="white-text" id="projects-link" href="#projects">Projects</a>
                 </p>
             </div>
 
             <div class="media">
                 <p>
-                    <a class="white-text" id="myText" href="#contacts">Contacts</a>
+                    <a class="white-text" id="contacts-link" href="#contacts">Contacts</a>
                 </p>
             </div>
 
@@ -127,8 +122,8 @@
             <div class="me">
 
                 <h1>
-                    <span class="white-text" id="myText">Hello, I`am</span>
-                    <span class="green-text">Melnichuk Ilya<br></span>
+                    <span class="white-text" id="whoami">Hello, I`am</span>
+                    <span class="green-text" id="myname">Melnichuk Ilya</span><br>
                     <span class="white-text" id="myText">Backend</span>
                     <span class="green-text">Developer</span>
                 </h1>
@@ -136,11 +131,9 @@
             </div>
 
             <div>
-
-                <p class="white-text" id="myText">
+                <p class="white-text" id="i-create">
                     I create reliable, secure backend services and API`s in Python.
                 </p>
-
             </div>
 
             <div class="my-stack">
@@ -182,15 +175,27 @@
 
                 <a class="watch-project-link" href="https://github.com/Ilya-17-m">
                     <button class="project-btn btn">
-                        <i class="fa-solid fa-gauge-simple-high"></i>
-                        Watch my project
+                        <p>
+                            <span>
+                                <i class="fa-solid fa-gauge-simple-high"></i>
+                            </span>
+                            <span id="watch-project-btn">
+                                Watch my project
+                            </span>
+                        </p>
                     </button>
                 </a>
 
 
                 <button class="call-button btn" id="openModal">
-                    <i class="fa-solid fa-phone-volume green-text"></i>
-                    Contact with me
+                    <p>
+                        <span>
+                            <i class="fa-solid fa-phone-volume green-text"></i>
+                        </span>
+                        <span id="call-me">
+                            Contact with me
+                        </span>
+                    </p>
                 </button>
 
             </div>
@@ -247,10 +252,14 @@
 
         <div  class="about-me skills-block">
             <h2 class="white-text" id="myText">
-                <i class="fa-regular fa-user green-text">&emsp;</i>
-                About me
+                <span>
+                    <i class="fa-regular fa-user green-text">&emsp;</i>
+                </span>
+                <span id="about-me">
+                    About me
+                </span>
             </h2>
-            <p style="color: #9FA6B0;">
+            <p id="me-description" style="color: #9FA6B0;">
                 I`am a backend-developer. I work with database design and integration,
                  create REST API.<br> I love clean code, automation and solving
                  complex problems.
@@ -267,7 +276,7 @@
                         <i class="fa-solid fa-calendar-days green-text">&emsp;</i>
                     </h2>
                     <p class="white-text" id="myText">
-                        <span class="gray-text">Age<br></span>
+                        <span class="gray-text" id="age">Age</span><br>
                         <span>18</span>
                     </p>
                 </div>
@@ -277,8 +286,8 @@
                         <i class="fa-solid fa-location-dot green-text">&emsp;</i>
                     </h2>
                     <p class="white-text" id="myText">
-                        <span class="gray-text">City<br></span>
-                        <span>Almaty, Kazakhstan</span>
+                        <span class="gray-text" id="city">City</span><br>
+                        <span id="city-description">Almaty, Kazakhstan</span>
                     </p>
                 </div>
             </div>
@@ -288,10 +297,10 @@
                     <i class="fa-solid fa-code green-text">&emsp;</i>
                 </h2>
                 <p class="white-text" id="myText">
-                    <span class="gray-text">
-                        Employment<br>
-                    </span>
-                    <span>Open to suggestions</span>
+                    <span class="gray-text" id="employments">
+                        Employment
+                    </span><br>
+                    <span id="employment-description">Open to suggestions</span>
                 </p>
             </div>
         </div>
@@ -303,8 +312,12 @@
 
         <div class="skills-block">
             <h2 class="white-text" id="myText">
-                <i class="fa-solid fa-code green-text">&emsp;</i>
-                Skills
+                <span>
+                    <i class="fa-solid fa-code green-text">&emsp;</i>
+                </span>
+                <span id="skills-text">
+                    Skills
+                </span>
             </h1>
         </div>
 
@@ -396,8 +409,12 @@
 
         <div class="skills-block">
             <h2 class="white-text" id="myText">
-                <i class="fa-solid fa-folder-open green-text">&emsp;</i>
-                Projects
+                <span>
+                    <i class="fa-solid fa-folder-open green-text">&emsp;</i>
+                </span>
+                <span id="projects">
+                    Projects
+                </span>
             </h2>
         </div>
 
@@ -408,12 +425,14 @@
 
                 <div>
                     <p class="project-title white-text" id="project-title">
-                        Megano shop
+                        <span id="shop">
+                            Megano shop
+                        </span>
                     </p>
                 </div>
 
                 <div>
-                    <p class="gray-text project-description">
+                    <p class="gray-text project-description" id="megano-description">
                         REST API for an online store. Product catalog, cart, orders,
                         profile, registraton, authentication and authorization.
                     </p>
@@ -451,9 +470,10 @@
                     <p>
                         <span>
                             <a class="project-link" href="https://github.com/Ilya-17-m/megano_shop">
-                                <i class="fa-brands fa-github"></i>
-                                GitHub | To cross
-                                <i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.8);"></i>
+                                <span><i class="fa-brands fa-github"></i></span>
+                                <span>GitHub |</span>
+                                <span id="toCross">To cross</span>
+                                <span><i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.8);"></i></span>
                             </a>
                         </span>
                     </p>
@@ -465,12 +485,12 @@
 
                 <div>
                     <p class="project-title white-text" id="project-title">
-                        Clone Twitter
+                        <span id="twitter">Clone Twitter</span>
                     </p>
                 </div>
 
                 <div>
-                    <p class="gray-text project-description">
+                    <p class="gray-text project-description" id="twitter-description">
                         API for Twitter clone. Support for work with
                         posts, subscriptions and account.
                     </p>
@@ -492,7 +512,7 @@
 
                     <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
-                            SQLAlchemy
+                            Python
                         </p>
                     </div>
 
@@ -508,9 +528,10 @@
                     <p>
                         <span>
                             <a class="project-link" href="https://github.com/Ilya-17-m/clone_twitter">
-                                <i class="fa-brands fa-github"></i>
-                                GitHub | To cross
-                                <i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.8);"></i>
+                                <span><i class="fa-brands fa-github"></i></span>
+                                <span>GitHub |</span>
+                                <span id="toCross">To cross</span>
+                                <span><i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.8);"></i></span>
                             </a>
                         </span>
                     </p>
@@ -522,15 +543,15 @@
 
                 <div>
                     <p class="project-title white-text" id="project-title">
-                        Tracking habits
+                        <span id="habits">Tracking habits</span>
                     </p>
                 </div>
 
                 <div>
-                    <p class="gray-text project-description" >
+                    <p class="gray-text project-description" id="habits-description">
                         API for the habit tracking project. It has registration,
-                         functionality for interaction with the habit and a queue
-                         of tasks to remind you of the habit.
+                        functionality for interaction with the habit and a queue
+                        of tasks to remind you of the habit.
                     </p>
                 </div>
 
@@ -556,7 +577,7 @@
 
                     <div class="sciense white-text" id="sciense">
                         <p style="transform: scale(0.8);">
-                            PostgreSQL
+                            Celery
                         </p>
                     </div>
 
@@ -566,9 +587,10 @@
                     <p>
                         <span>
                             <a class="project-link" href="https://github.com/Ilya-17-m/Tracking_habits">
-                                <i class="fa-brands fa-github"></i>
-                                GitHub | To cross
-                                <i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.8);"></i>
+                                <span><i class="fa-brands fa-github"></i></span>
+                                <span>GitHub |</span>
+                                <span id="toCross">To cross</span>
+                                <span><i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.8);"></i></span>
                             </a>
                         </span>
                     </p>
@@ -578,7 +600,7 @@
 
         </div>
 
-        <div class="gray-text" style="margin: 0 3%;">
+        <div class="gray-text" id="wath-github" style="margin: 0 3%;">
             The rest of the projects can be found on GitHub.
         </div>
 
@@ -589,59 +611,68 @@
         <div class="education">
 
             <div class="white-text" id="myText">
+
                 <h3>
-                    <i class="fa-solid fa-graduation-cap green-text">&nbsp;</i>
-                    Education
+                    <span>
+                        <i class="fa-solid fa-graduation-cap green-text">&nbsp;</i>
+                    </span>
+                    <span id="MyEducation">
+                        Education
+                    </span>
                 </h3>
+
                 <p class="contacts">
                     <span>
-                        <i class="fa-solid fa-signal">&nbsp;</i>
-                        Degree education:<br>
+                        <span>
+                            <i class="fa-solid fa-signal">&nbsp;</i>
+                        </span>
+                        <span id="degree-education">
+                            Degree of education:
+                        </span><br>
                     </span>
-                    <span class="blue-text">
-                        <br>Higher education.<br>
-                    </span>
-                </p>
-                <p class="contacts">
-                    <span>
-                        <br><i class="fa-brands fa-leanpub">&nbsp;</i>
-                        Faculty:<br>
-                    </span>
-                    <span class="blue-text">
-                        <br>Applied informatics.<br>
+                    <br><span class="blue-text" id="higher-education">
+                        Higher education
                     </span>
                 </p>
-                <p class="contacts">
-                    <span>
-                        <br><i class="fa-solid fa-laptop-code">&nbsp;</i>
-                        Speciality:<br>
-                    </span>
-                    <span class="blue-text">
-                        <br>Applied informatics in economics.
-                    </span>
-                </p>
+
 
             </div>
 
             <div class="white-text" id="myText">
                 <h3>
-                    <i class="fa-solid fa-address-card green-text">&nbsp;</i>
-                    Contacts
+                    <span>
+                        <i class="fa-solid fa-address-card green-text">&nbsp;</i>
+                    </span>
+                    <span id="Mycontacts">
+                        Contacts
+                    </span>
                 </h3>
 
                 <p class="contacts">
                     <span>
-                        <i class="fa-solid fa-envelope">&nbsp;</i>
-                        Email<br>
+                        <span>
+                            <i class="fa-solid fa-envelope">&nbsp;</i>
+                        </span>
+                        <span id="my-email">
+                            Email
+                        </span><br>
                         <span class="blue-text"><br>ilya.melnichuk.2007@mail.ru<br></span>
                     </span>
 
                     <span>
-                        <br><i class="fa-brands fa-telegram">&nbsp;</i>
-                        Telegram<br>
+                        <span>
+                            <br><i class="fa-brands fa-telegram">&nbsp;</i>
+                        </span>
+                        <span>
+                            Telegram
+                        </span><br>
                         <br><a class="contact-link blue-text" href="https://t.me/just_ilya04">
-                            @just_ilya04
-                            <i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.7);"></i>
+                            <span id="nick-tel">
+                                @just_ilya04
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" style="transform: scale(0.7);"></i>
+                            </span>
                         </a><br>
                     </span>
 
@@ -681,42 +712,35 @@
     </footer>
 
 
-    <div class="modal-message" id="modal-message">
-        <div class="modal-message-content" id="modal-message-content">
-            <p id="modal-message-text"></p>
-        </div>
-    </div>
-
-
     <div class="modal" id="modal">
         <div class="modal-content" id="modal-content">
-            <h2 style="color: #4FE38B;">Contact with me</h2>
+            <h2 id="modalCallMe" style="color: #4FE38B;">Contact with me</h2>
 
             <form id="contact-form">
                 <div class="name">
                     <div class="name-value modal-text-dark" id="modal-text">
-                        <p class="name-value">First name</p>
+                        <p class="name-value" id="modalFirstName">First name</p>
                         <input id="firstName" class="name-style input-style-dark" type="text" placeholder="Ivan">
                     </div>
 
                     <div class="name-value modal-text-dark" id="modal-text">
-                        <p class="name-value">Last name</p>
+                        <p class="name-value" id="modalLastName">Last name</p>
                         <input id="lastName" class="name-style input-style-dark" type="text" placeholder="Ivanov">
                     </div>
                 </div>
 
                 <div class="name-value modal-text-dark" id="tel-number">
-                    <p class="topic-value">Email</p>
+                    <p class="topic-value" id="modalEmail">Email</p>
                     <input id="email" class="name-style input-style-dark" type="email" placeholder="ivan.ivanov@gmail.com">
                 </div>
 
                 <div class="user-tel modal-text-dark" id="tel-number">
-                    <p class="tel-value">Telephone number</p>
+                    <p class="tel-value" id="modalTel">Telephone number</p>
                     <input id="phone" class="name-style input-style-dark" type="tel" placeholder="+7-7(XX)-(XXX)-(XX)-(XX)">
                 </div>
 
                 <div class="user-tel modal-text-dark" id="topic">
-                    <p class="topic-value">Topic</p>
+                    <p class="topic-value" id="modalTopic">Topic</p>
                     <textarea id="message" class="name-style input-style-dark bigTextArea"
                     placeholder="Job offer or project question" style="max-height: 40px;"></textarea>
                 </div>
@@ -737,7 +761,7 @@
 
     <script type="module" src="../../static/js/modal.js"></script>
     <script type="module" src="../../static/js/theme.js"></script>
-    <script src="../../static/js/languages.js"></script>
-
+    <script type="module" src="../../static/js/languages.js"></script>
+    <script type="module" src="../../static/js/api-work.js"></script>
 </body>
 </html>

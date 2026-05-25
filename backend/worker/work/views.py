@@ -7,6 +7,9 @@ from .serializer import WorkSerializer
 
 
 class CreateWorkAPIView(APIView):
+    """
+        Create a new work
+    """
 
     def post(self, request) -> Response:
         new_work = WorkModel.objects.create(
@@ -23,6 +26,14 @@ class CreateWorkAPIView(APIView):
             many=True
         )
         if serializer.is_valid():
-            return Response({'message': 'Sent successfully!'}, status=status.HTTP_201_CREATED)
+            serializer.save()
 
-        return Response({'message': 'Something went wrong...'}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(
+                {'message': 'Sent successfully!'},
+                status=status.HTTP_201_CREATED
+            )
+
+        return Response(
+            {'message': 'Something went wrong...'},
+            status=status.HTTP_400_BAD_REQUEST
+        )

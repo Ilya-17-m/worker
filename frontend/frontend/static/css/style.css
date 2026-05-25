@@ -6,7 +6,6 @@
   --green: #2FB872;
   --blue: #74A0E7;
   --gray: #6C707B;
-  --white: #ffff;
 }
 
 body {
@@ -379,7 +378,7 @@ footer {
 
 
 /* =======================
-   MODAL 
+   MODAL
 ======================= */
 
 
@@ -401,30 +400,10 @@ footer {
   border: solid rgba(0, 255, 170, 0.3) 2px;
   background-color: #090F1B;
 
-  box-shadow: 
+  box-shadow:
   0 0 10px rgba(0, 255, 170, 0.4),
   0 0 20px rgba(0, 255, 170, 0.3),
   0 0 40px rgba(0, 255, 170, 0.2);
-}
-
-.modal-message {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 350px;
-  max-height: 35px;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-message-content {
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  border: solid black 2px;
 }
 
 .modal-btn {

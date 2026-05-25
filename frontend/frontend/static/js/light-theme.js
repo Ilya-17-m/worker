@@ -1,9 +1,13 @@
 
 
-async function lightHeaderStyle() {
+function lightHeaderStyle() {
 
   const whiteText = document.querySelectorAll('#myText');
   const header = document.querySelector('header');
+  const worker = document.querySelector('#worker-link');
+  const skills = document.querySelector('#skills-link');
+  const projects = document.querySelector('#projects-link');
+  const contacts = document.querySelector('#contacts-link');
 
   whiteText.forEach(element => {
     element.className = 'black-text';
@@ -11,22 +15,31 @@ async function lightHeaderStyle() {
 
   header.className = 'header-light head-information';
 
-}
+  worker.className = 'black-text';
+  skills.className = 'black-text';
+  projects.className = 'black-text';
+  contacts.className = 'black-text';
+};
 
 
-async function lightFirstSectionStyle() {
+function lightFirstSectionStyle() {
     const secEl = document.querySelector('#first-section');
     const consoleEl = document.querySelector('#console');
     const myconsoleEl = document.querySelector('#my-console-text');
+
+    const whoami = document.querySelector('#whoami');
+    const iCreate = document.querySelector('#i-create');
 
     secEl.className = 'greeting first-sec-light';
     consoleEl.className = 'my-console my-console-light';
     myconsoleEl.className = 'console-text black-text console-light';
 
-}
+    whoami.className = 'black-text';
+    iCreate.className = 'black-text';
+};
 
 
-async function lightSecondSectionStyle() {
+function lightSecondSectionStyle() {
     const secEl = document.querySelector('#second-section');
     const meInfoEl = document.querySelectorAll('#myInfo');
     const emplEl = document.querySelector('#employment');
@@ -34,13 +47,13 @@ async function lightSecondSectionStyle() {
     secEl.className = 'worker-information second-sec-light';
     emplEl.className = 'active-work employment-light';
 
-        meInfoEl.forEach(element => {
+    meInfoEl.forEach(element => {
         element.className = 'worker-c me-info-light';
     });
-}
+};
 
 
-async function lightThirdSectionStyle() {
+function lightThirdSectionStyle() {
     const secEl = document.querySelector('#skills');
     const swiperEl = document.querySelectorAll('#swiper-text');
 
@@ -52,7 +65,7 @@ async function lightThirdSectionStyle() {
 }
 
 
-async function lightFourthSectionStyle() {
+function lightFourthSectionStyle() {
     const secEl = document.querySelector('#worker-projects');
     const projectTitle = document.querySelectorAll('#project-title');
     const scienseEl = document.querySelectorAll('#sciense');
@@ -75,21 +88,21 @@ async function lightFourthSectionStyle() {
 }
 
 
-async function lightFifthSectionStyle() {
+function lightFifthSectionStyle() {
     const secEl = document.querySelector('#contacts');
 
     secEl.className = 'fifth-section-light';
 }
 
 
-async function lightFooterStyle() {
+function lightFooterStyle() {
     const secEl = document.querySelector('#footer');
 
     secEl.className = 'footer-light';
 }
 
 
-async function lightModalStyle() {
+function lightModalStyle() {
 
     const modalContent = document.querySelector('#modal-content');
     const modalText = document.querySelectorAll('#modal-text');
@@ -122,13 +135,13 @@ async function lightModalStyle() {
 
 
 // All light style functions
-export default async function lightThemeStyle() {
-    await lightHeaderStyle()
-    await lightFirstSectionStyle()
-    await lightSecondSectionStyle()
-    await lightThirdSectionStyle()
-    await lightFourthSectionStyle()
-    await lightFifthSectionStyle()
-    await lightFooterStyle()
-    await lightModalStyle()
+export default function lightThemeStyle() {
+    lightHeaderStyle()
+    lightFirstSectionStyle()
+    lightSecondSectionStyle()
+    lightThirdSectionStyle()
+    lightFourthSectionStyle()
+    lightFifthSectionStyle()
+    lightFooterStyle()
+    lightModalStyle()
 };
