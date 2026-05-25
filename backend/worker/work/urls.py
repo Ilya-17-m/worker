@@ -6,5 +6,5 @@ app_name = 'work'
 
 
 urlpatterns = [
-    path('work/', CreateWorkAPIView.as_view(), name='create_new_work')
+    path('work/', CreateWorkAPIView.as_view(), name='create_new_work'),
 ]

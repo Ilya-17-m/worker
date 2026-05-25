@@ -4,7 +4,7 @@ from django.db import models
 class WorkModel(models.Model):
     first_name = models.CharField(max_length=55, null=False)
     last_name = models.CharField(max_length=55)
-    email = models.EmailField(null=False)
+    email = models.CharField(null=False)
     tel_number = models.CharField(max_length=12)
     topic = models.TextField(null=False)
 

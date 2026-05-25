@@ -12,18 +12,8 @@ class CreateWorkAPIView(APIView):
     """
 
     def post(self, request) -> Response:
-        new_work = WorkModel.objects.create(
-            first_name=request.data.get('first_name'),
-            last_name=request.data.get('last_name'),
-            email=request.data.get('email'),
-            tel_number=request.data.get('tel_number'),
-            topic=request.data.get('topic')
-        )
-
         serializer = WorkSerializer(
-            new_work,
-            data=request.data,
-            many=True
+            data=request.data
         )
         if serializer.is_valid():
             serializer.save()
@@ -33,7 +23,8 @@ class CreateWorkAPIView(APIView):
                 status=status.HTTP_201_CREATED
             )
 
+        print('Сериализер не валиден:', serializer.errors)
         return Response(
-            {'message': 'Something went wrong...'},
+            serializer.errors,
             status=status.HTTP_400_BAD_REQUEST
         )
