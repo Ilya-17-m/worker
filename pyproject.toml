@@ -12,7 +12,8 @@ dependencies = [
     "djangorestframework (>=3.17.1,<4.0.0)",
     "python-dotenv (>=1.2.2,<2.0.0)",
     "uvicorn (>=0.47.0,<0.48.0)",
-    "setuptools (>=82.0.1,<83.0.0)"
+    "setuptools (>=82.0.1,<83.0.0)",
+    "pillow (>=12.2.0,<13.0.0)"
 ]
 
 
