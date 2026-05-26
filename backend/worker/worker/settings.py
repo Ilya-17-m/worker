@@ -1,5 +1,7 @@
+import logging
 import os
 from pathlib import Path
+from logging import config
 
 from dotenv import load_dotenv
 
@@ -28,7 +30,6 @@ INSTALLED_APPS = [
 
     'frontend',
     'work',
-
 ]
 
 MIDDLEWARE = [
@@ -46,7 +47,7 @@ ROOT_URLCONF = 'worker.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -105,3 +106,28 @@ STATIC_URL = 'static/'
 
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+logging.config.dictConfig({
+    'version': 1,
+    'disable_existing_loggers': False,
+
+    'formatters': {
+        'console': {
+            'format': '%(asctime)s %(levelname)s %(lineno)s %(module)s %(message)s'
+        },
+    },
+
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'console',
+        },
+    },
+
+    'loggers': {
+        '': {
+            'level': os.getenv('LOG_LEVEL'),
+            'handlers': ['console',]
+        }
+    }
+})
