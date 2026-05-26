@@ -1,12 +1,13 @@
-# Worker resume site
+# Worker resume site, frontend part.
 
 
 ## Description: 
 ### The site is inspired by the authors resume. Has the functionality of changing the topic from night to day, sending a from so that the worker can contact the employer.
 
 + [Technologies](#technologies)
-+ [Team project](#team-project)
++ [Team project](#author-project)
 + [Connect package](#connect-package)
++ + [Documentation](#documentation)
 
 
 ## Technologies:
@@ -18,6 +19,7 @@
 + FontAwesome
 + Devicon
 + Choices.js
++ JustValidate
 
 
 ## Connect package:
@@ -40,9 +42,9 @@ urlpatterns = [
 ```
 ## Documentation
 
-###
+### You can find the frontend documentation in the swagger directory.
 
-### Team project:
+### Author project:
 #### Contacts: +7-777-369-98-56
 #### Email: ilya.melnichuk.2007@mail.ru
 + Melnichuk Ilya | Backend-Developer (Python)

@@ -14,7 +14,8 @@ dependencies = [
     "uvicorn (>=0.47.0,<0.48.0)",
     "setuptools (>=82.0.1,<83.0.0)",
     "pillow (>=12.2.0,<13.0.0)",
-    "requests (>=2.34.2,<3.0.0)"
+    "requests (>=2.34.2,<3.0.0)",
+    "drf-spectacular (>=0.29.0,<0.30.0)"
 ]
 
 

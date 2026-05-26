@@ -9,14 +9,17 @@ services:
     hostname: 127.0.0.1
     ports:
       - '8000:8000'
-
+    logging:
+      driver: loki
+      options:
+        loki-url: http://localhost:3100/loki/api/v1/push
 
   grafana:
-    image: grafana/grafana:5.1.0
+    image: grafana/grafana:9.2.20
     ports:
       - '3000:3000'
 
   loki:
-    image: grafana/loki:latest
+    image: grafana/loki:2.9.17
     ports:
       - '3100:3100'
