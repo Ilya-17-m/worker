@@ -1,49 +1,197 @@
-# Worker resume site, backend part.
+# 💼 Worker Resume Website (Backend)
 
+Backend-часть персонального сайта-портфолио, разработанная на **Django** и **Django REST Framework**.
 
-## Description: 
-### The project is a resume site during which each user can send an application for a work application or some quetions about the project when sending an application to the specialist, an application is sent to the telegram bot. The site has the possibility of individual settings for each user: language (english, russian, kazakh), theme (light or dark). The project also has a modal window shape validation.
+Проект предоставляет REST API для сайта-резюме, где пользователи могут отправлять сообщения, вопросы и предложения о сотрудничестве. Все отправленные заявки автоматически пересылаются в Telegram-бота для оперативной обработки.
 
-+ [Technologies](#technologies)
-+ [Team project](#author-project)
-+ [Settings project](#settings-project)
-+ [Documentation](#documentation)
+Кроме того, приложение поддерживает персональные настройки пользователя, включая выбор языка интерфейса и темы оформления.
 
+---
 
-## Technologies:
+# 🚀 Features
 
-+ Python
-+ Django
-+ Django Rest Framework
-+ PostgreSQL
-+ Docker
-+ Grafana
-+ Loki
-+ JavaScript
-+ CSS
-+ HTML
-+ JustValidate
-+ Choices.js
-+ FontAwesome
-+ Devicon
-+ Swiper
+- 📩 Contact form with Telegram integration
+- 🤖 Automatic message delivery to Telegram
+- 🌍 Multi-language support
+  - English
+  - Russian
+  - Kazakh
+- 🎨 Light and Dark themes
+- ✅ Client-side form validation
+- 📖 REST API
+- 📑 Swagger & ReDoc documentation
+- 📊 Application monitoring
+- 📝 Centralized logging
 
+---
 
-## Settings project:
+# 📑 Contents
 
-### You can see the project settings in the README.md file in the backend and frontend directories.
+- [Technologies](#-technologies)
+- [Architecture](#-architecture)
+- [Getting Started](#-getting-started)
+- [Documentation](#-documentation)
+- [Monitoring](#-monitoring)
+- [Project Structure](#-project-structure)
+- [Author](#-author)
 
+---
 
-## Documentation:
+# 🛠 Technologies
 
-### Documentation can be found at hte following links:
+## Backend
 
-#### 1. ```http://127.0.0.1:8000/api/swagger/```
-#### 2. ```http://127.0.0.1:8000/api/redoc/```
+- Python
+- Django
+- Django REST Framework
+- PostgreSQL
 
-### Author project:
+## Infrastructure
 
-#### Contacts: +7-777-369-98-56
-#### Email: ilya.melnichuk.2007@mail.ru
+- Docker
 
-+ Melnichuk Ilya | Backend-Developer (Python)
+## Monitoring
+
+- Grafana
+- Loki
+
+## Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+## UI Libraries
+
+- JustValidate
+- Choices.js
+- Swiper
+- Font Awesome
+- Devicon
+
+---
+
+# 🏗 Architecture
+
+The project consists of two independent parts:
+
+```
+backend/
+```
+
+Provides:
+
+- REST API
+- Contact form processing
+- Telegram integration
+- Database interaction
+- User settings
+- Monitoring and logging
+
+---
+
+```
+frontend/
+```
+
+Responsible for:
+
+- User interface
+- Form validation
+- Theme switching
+- Language switching
+- Responsive layout
+
+---
+
+# 🚀 Getting Started
+
+Project configuration and installation instructions are available in the corresponding directories:
+
+```
+backend/README.md
+```
+
+and
+
+```
+frontend/README.md
+```
+
+---
+
+# 📖 Documentation
+
+After running the backend server, the API documentation is available at:
+
+### Swagger UI
+
+```
+http://127.0.0.1:8000/api/swagger/
+```
+
+### ReDoc
+
+```
+http://127.0.0.1:8000/api/redoc/
+```
+
+---
+
+# 📊 Monitoring
+
+The application supports monitoring and centralized logging using:
+
+- Grafana
+- Loki
+
+These tools help monitor application performance and simplify troubleshooting.
+
+---
+
+# 📂 Project Structure
+
+```
+worker-resume-site/
+│
+├── backend/
+│   ├── README.md
+│   ├── __init__.py
+│   └── worker/
+│         ├── work/
+│         ├── worker/
+│         ├── __init__.py
+│         └── manage.py
+│   
+│   
+│   
+│
+├── frontend/
+│   ├── frontend/
+│   └── swagger/
+│        └── swagger.yaml
+│   
+│   
+│
+├── .env.template
+├── .env
+├── .gitignore
+├── Dockerfile
+├── docker-compose.yaml
+├── nginx.conf
+├── poetry.lock
+├── pyproject.toml
+└── README.md
+```
+
+---
+
+# 👨‍💻 Author
+
+**Melnichuk Ilya**
+
+Python Backend Developer
+
+📞 +7 (777) 369-98-56
+
+📧 ilya.melnichuk.2007@mail.ru
